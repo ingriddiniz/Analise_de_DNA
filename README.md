@@ -21,4 +21,4 @@ As seguintes linhas formam uma string que codifica a sequência de DNA, contendo
 | G     | guanine  |
 | T     | thymine  |
 
-O resultado da função deve ser um par de strings que forma uma [cadeia de DNA](https://www.genome.gov/genetics-glossary/Base-Pair), em que a primeira string é a sequência $5' \rightarrow 3'$ lida do ficheiro, e a segunda string é o complemento $3' \rightarrow 5'$, que pode ser calculada aplicando a função `nucleotidePair` a cada letra da primeira string.
+O resultado da função é um par de strings que forma uma [cadeia de DNA](https://www.genome.gov/genetics-glossary/Base-Pair), em que a primeira string é a sequência $5' \rightarrow 3'$ lida do ficheiro, e a segunda string é o complemento $3' \rightarrow 5'$, que pode foi calculada aplicando a função `nucleotidePair` a cada letra da primeira string.
