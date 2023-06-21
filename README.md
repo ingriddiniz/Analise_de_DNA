@@ -1,5 +1,5 @@
 # Análise de DNA
-Será feito o corte de sequências de DNA de acordo com restrições de enzimas, utilizando as bibliotecas base do Python.
+Este é um projeto da cadeira de Programação 2 da Faculdade de Ciências da Universidade do Porto, cujo objetivo é o corte de sequências de DNA de acordo com restrições de enzimas, utilizando as bibliotecas base do Python.
 
 ## Tarefa 1
 A função `leDNA` lê uma sequência de DNA no formato [FASTA](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp).
@@ -53,6 +53,6 @@ Depois de um cabeçalho de algumas linhas, cada linha define uma enzima no forma
 
 A variável `nucleotideBases` representa esta tabela como um dicionário.
 
-Cada excerto pode conter um caracter especial `'` que determina a posição particular em que a enzima corta uma sequência de DNA; quando uma posição de corte não é definida concretamente, a posição de corte assumida é no fim do excerto no sentido $5' \rightarrow 3'$ e no início no sentido $3' \rightarrow 5'$. Quando o excerto `cut35` não é dado explicitamente, este pode ser calculado utilizando a função `nucleotidePair`, e a sua posição de corte é o inverso da posição de corte do excerto `cut53`, i.e., contar o mesmo índice da direita para a esquerda.
+Cada excerto pode conter um caracter especial `'` que determina a posição particular em que a enzima corta uma sequência de DNA; quando uma posição de corte não é definida concretamente, a posição de corte assumida é no fim do excerto no sentido $5' \rightarrow 3'$ e no início no sentido $3' \rightarrow 5'$. Quando o excerto `cut35` não é dado explicitamente, este é calculado a partir da função `nucleotidePair`, e a sua posição de corte é o inverso da posição de corte do excerto `cut53`.
 
 O resultado da função `leEnzima` é uma base de dados de enzimas, representada como um dicionário de nomes de enzimas para representações de enzimas no formato `(excerto53,pos53,excerto35,pos35)`, em que `excerto53` e `excerto35` são excertos de DNA e `pos53` e `pos35` são respetivamente as posições de corte em cada excerto.
