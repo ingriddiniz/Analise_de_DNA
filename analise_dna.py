@@ -17,7 +17,7 @@ def nucleotidePair(c):
 def leDNA():
     sequence = ''
     complemento = ''
-    with open('/content/drive/MyDrive/Prog2/dados_P1/U49845.1.fasta', 'r') as file:
+    with open('U49845.1.fasta', 'r') as file:
         for line in file:
             line = line.strip()
             if not line.startswith('>'):  # Ignorar linhas de cabeçalho
@@ -29,7 +29,7 @@ def leDNA():
 
 def leEnzima():
     enzimas = {}
-    with open('/content/drive/MyDrive/Prog2/dados_P1/link_staden.txt', 'r') as file:
+    with open('link_staden.txt', 'r') as file:
         lines = file.readlines()
         lines = lines[:-1]
         found_start = False
