@@ -1,5 +1,5 @@
 # Análise de DNA
-Este é um projeto da cadeira de Programação 2 da Faculdade de Ciências da Universidade do Porto, cujo objetivo é o corte de sequências de DNA de acordo com restrições de enzimas, utilizando as bibliotecas base do Python.
+Este é um projeto da cadeira de Programação 2 da proposto pela Faculdade Ciências da Universidade do Porto, cujo objetivo é o corte de sequências de DNA de acordo com restrições de enzimas, utilizando as bibliotecas base do Python.
 
 ## Tarefa 1
 A função `leDNA` lê uma sequência de DNA no formato [FASTA](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp).
