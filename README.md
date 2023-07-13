@@ -56,3 +56,10 @@ A variável `nucleotideBases` representa esta tabela como um dicionário.
 Cada excerto pode conter um caracter especial `'` que determina a posição particular em que a enzima corta uma sequência de DNA; quando uma posição de corte não é definida concretamente, a posição de corte assumida é no fim do excerto no sentido $5' \rightarrow 3'$ e no início no sentido $3' \rightarrow 5'$. Quando o excerto `cut35` não é dado explicitamente, este é calculado a partir da função `nucleotidePair`, e a sua posição de corte é o inverso da posição de corte do excerto `cut53`.
 
 O resultado da função `leEnzima` é uma base de dados de enzimas, representada como um dicionário de nomes de enzimas para representações de enzimas no formato `(excerto53,pos53,excerto35,pos35)`, em que `excerto53` e `excerto35` são excertos de DNA e `pos53` e `pos35` são respetivamente as posições de corte em cada excerto.
+
+## Conclusão
+Neste projeto de Programação 2, trabalhamos com o processamento de sequências de DNA e restrições de enzimas utilizando a linguagem de programação Python.
+  
+Implementamos funções para ler sequências de DNA a partir de arquivos no formato FASTA e para ler restrições de enzimas no formato Staden. As sequências de DNA foram lidas e organizadas em uma cadeia de DNA e seu complemento. As restrições de enzimas foram lidas e armazenadas em uma base de dados de enzimas, contendo informações sobre os excertos de DNA e as posições de corte.
+  
+Esse projeto demonstrou a aplicação prática da linguagem Python no processamento de dados de sequências de DNA e enzimas, ampliando o conhecimento sobre genética e biologia molecular. Através da implementação dessas funções, adquirimos habilidades em manipulação de strings e estruturação de dados, essenciais para lidar com informações genéticas.
